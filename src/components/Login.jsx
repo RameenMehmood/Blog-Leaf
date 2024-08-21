@@ -28,7 +28,7 @@ const Login = () => {
   return (
     <>
     <div className="header">
-    <div class="opacity">       
+    <div className="opacity">       
     </div>
     <div className="login zindex-login">
    <div className="login-mp">

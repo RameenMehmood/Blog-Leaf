@@ -2,25 +2,17 @@
 import { Outlet } from 'react-router-dom'
 import './App.css'
 import './responsive.css'
-
-import Footer from './components/Footer'
-import Login from './components/Login'
 import Navbar from './components/Navbar'
 import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import authservice from './appwrite/auth'
 import { login,logout } from './store/authSlice'
-
-import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import Welcome from './components/Welcome'
-import MyBLogs from './components/MyBLogs'
-import AllPosts from './components/AllPosts'
+
 
 
 function App() {
 const [loading,setLoading]=useState(true)
-const authStatus=useSelector((state)=>(state.auth.status))
 
 const dispatch=useDispatch();
 useEffect(() => {

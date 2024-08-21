@@ -161,7 +161,7 @@ function PostForm({ post }) {
 
               />
               {post && post.image && (
-                <img src={service.getfilePreview(post.image)} className='img' />
+                <img src={service.getfilePreview(post.image)} className='img' alt='image loading' />
               )}
             </div>
 

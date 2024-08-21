@@ -32,7 +32,7 @@ function Signup() {
     return (
         <>
         <div className="header">
-        <div class="opacity">       
+        <div className="opacity">       
         </div>
         <div className='signup zindex-login'>
             <div className="login-mp">

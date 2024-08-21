@@ -50,8 +50,10 @@ function IndividualPost() {
                         <div className="card left-indi m-20 mt-30">
                             <h1 className='margin'>{post.title}</h1>
                             <div className="m-20">
-                                {post.image && <img src={service.getfilePreview(post.image)} className='img-indi' />}
-                             <p className='margin font-indi'>  {post.content ? parse(post.content) : "No content available"}</p> 
+                                {post.image && <img src={service.getfilePreview(post.image)} className='img-indi'/>
+                                }
+                             <div className='margin font-indi'>  {post.content ? parse(post.content) : "No content available"}</div> 
+                             <div className='date-indi name'>  {new Date(post.createdAt).toLocaleString()}</div>
                                
                             </div>
                          
@@ -63,7 +65,6 @@ function IndividualPost() {
                                     </Link>
                                     <button className='btn-logout hover ' onClick={deletePost}>Delete</button>
                                     </div>
-                                <div className='date-indi name'>  {new Date(post.createdAt).toLocaleString()}</div>
 
                                 </div>
                             )}
