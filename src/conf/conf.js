@@ -7,6 +7,7 @@ appwriteBucketID:String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
 tinymce:String(import.meta.env.VITE_PUBLIC_API_URL)
 
 
+
 }
 
 export default conf
