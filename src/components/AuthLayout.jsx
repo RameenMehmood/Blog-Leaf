@@ -18,8 +18,6 @@ export default function Protected({children, authentication = true}) {
     setLoading(false)
 }, [authStatus, navigate, authentication])
 
-    
-
   return (
     <>
     {loading? "loading":children}

@@ -1,8 +1,11 @@
 import React from 'react'
 import { Controller } from 'react-hook-form'
 import { Editor } from '@tinymce/tinymce-react'
+import conf from "../conf/conf";
+
 
 function RTE({name,control,label,defaultValue=""}) {
+  const apiKey = conf.tinymce;
   return (
     <>
         {label && <label  className='font-size' >{label}</label>}
@@ -14,7 +17,7 @@ function RTE({name,control,label,defaultValue=""}) {
         control={control}
         render={({field : {onChange}})=>(
             <Editor
-           
+            apiKey={apiKey}
             initialValue={defaultValue}
             init={{
                 height: 500,

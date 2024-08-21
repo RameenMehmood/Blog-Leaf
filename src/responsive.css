@@ -32,7 +32,7 @@
     /* welcome  */
     .zindex {
         
-        margin: 440px 112px;
+        margin: 240px 50px;
         font-size: 18px;
     }
     /* login  */
@@ -75,7 +75,7 @@ font-size: 17px;
     /* welcome */
     .zindex {
         
-        margin: 435px 50px;
+        margin: 235px 20px;
         font-size: 17px;
     }
     .zindex-login {
@@ -222,7 +222,7 @@ font-size: 15px;
 @media only screen and (max-width: 500px) {
     /* welcome */
     .zindex {
-        margin: 395px 20px;
+        margin: 250px 20px;
         font-size: 12px;
     }
     .zindex-login {
@@ -363,7 +363,7 @@ padding: 35px 15px;
 }
 @media screen and (max-width: 410px){
   .zindex {
-    margin: 260px 20px;
+    margin: 210px 18px;
     font-size: 11px;
 }
   .nav img{

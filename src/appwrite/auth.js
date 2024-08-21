@@ -30,7 +30,7 @@ export class AuthService{
     }
 async login({email,password}){
     try {
-        return await this.account.createEmailPasswordSession(email,password)
+         await this.account.createEmailPasswordSession(email,password)
         
     } catch (error) {
         throw error
@@ -45,16 +45,19 @@ async logout(){
     }
     
 }
+
 async getloggedinuser(){
     try {
-        return await this.account.get()
-        
+        return await this.account.get();
+               
     } catch (error) {
         // throw error
-        console.log("error is ",error)
+         console.log("Failed to retrieve user. Error is:", error);
+        return null;
     }
-    return null;
+    
 }
+
 
 }
 

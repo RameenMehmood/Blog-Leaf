@@ -7,7 +7,7 @@ import Footer from './Footer'
       <>
       
         <div className="header">
-        <div class="opacity">       
+        <div className="opacity">       
         </div>
         <div className="zindex ">
         <h2>Welcome to BlogLeaf</h2>
