@@ -523,3 +523,16 @@ padding: 35px 17px;
   font-size: 10px;
 }
 }
+@media screen and (max-width: 260px){
+  .img{
+    height: 55px;
+    width: 55px;
+  }
+  input[type="file"] {
+    
+    font-size: 3px;
+}
+.font-size-pf {
+  font-size: 7px;
+}
+}
