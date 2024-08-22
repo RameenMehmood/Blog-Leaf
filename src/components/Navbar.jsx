@@ -2,7 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logoutbtn from './Logoutbtn'
 import { useSelector } from 'react-redux'
-import logo from '../assets/tropical-leaves.png'
 
 const Navbar = () => {
 
@@ -44,7 +43,7 @@ const Navbar = () => {
 
       <nav className='nav'>
         <div className="logo flex">
-          <img src={logo} alt="" />
+          <img src='/tropical-leaves.png' alt="" />
           <h1 className='name italic'>BlogLeaf</h1>
         </div>
         <ul className='nav-items'>

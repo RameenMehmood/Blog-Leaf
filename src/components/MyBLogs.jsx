@@ -46,9 +46,9 @@ function MyBLogs() {
           <h1 className='text-center p-up'>{username}</h1>
            
             {posts.map((post) => (
-                <div className="padding ">
+                <div className="padding " key={post.$id}>
                 <div className="card m-top left ">      
-                <div className="" key={post.$id}>
+                <div className="" >
 
                     {post.status === 'draft' ? (
                         <div>  

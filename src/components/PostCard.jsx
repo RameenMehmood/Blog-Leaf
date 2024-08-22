@@ -2,7 +2,6 @@ import React from 'react'
 import service from '../appwrite/config'
 import { Link } from 'react-router-dom'
 import parse from 'html-react-parser';
-import logo from '../assets/tropical-leaves.png'
 
 
 function getPreviewContent(content, maxLength = 100) {
@@ -24,7 +23,7 @@ function PostCard({ $id, username, title, image, content, createdAt, onUsernameC
    
     <Link to={`/user-posts/${username}`}>
     <div className="flex-pf">
-    <img src={logo} alt="" className='logo' />
+    <img src='/tropical-leaves.png' alt="" className='logo' />
       <h1 className='m-10' onClick={onUsernameClick}>
         {username}
       </h1>

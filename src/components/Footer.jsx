@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../assets/tropical-leaves.png'
 
 
 const Footer = () => {
