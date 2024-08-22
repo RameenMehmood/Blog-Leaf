@@ -355,7 +355,7 @@ padding: 35px 15px;
     width: 80px;
   }
   .font-size-pf{
-    font-size: 13px;
+    font-size: 12px;
   }
   .limit{
     font-size: 12px;
@@ -364,7 +364,7 @@ padding: 35px 15px;
   }
   input[type="file"] {
     
-    font-size: 11px;
+    font-size: 10px;
 }
 .error{
   font-size: 10px;
@@ -503,7 +503,7 @@ padding: 35px 17px;
   }
   input[type="file"] {
     
-    font-size: 7px;
+    font-size: 8px;
 }
 .no-post{
   font-size: 11px;
