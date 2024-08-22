@@ -48,7 +48,6 @@ function MyBLogs() {
             {posts.map((post) => (
                 <div className="padding " key={post.$id}>
                 <div className="card m-top left ">      
-                <div className="" >
 
                     {post.status === 'draft' ? (
                         <div>  
@@ -93,7 +92,7 @@ function MyBLogs() {
                         </>
                         
                     )}
-                    </div>
+                    
                     
                 </div>
                 </div>

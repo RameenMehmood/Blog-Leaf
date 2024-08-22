@@ -48,7 +48,27 @@ function IndividualPost() {
                 <>
                     <div className="padding-indi">
                         <div className="card left-indi m-20 mt-30">
+                        {post.status === 'draft' ? (
+                        <div>  
+                            <h2 className='margin-h1'>{post.title}</h2>
+                            <p className='m-20 '>This post is currently in draft.</p>
+                            <div className='mt-50 flex-btn' >
+                                <div className="gap-btn">
+                            <Link to={`/draft-post/${post.$id}`}>
+                                <button className='btn-logout hover'>View Draft</button>
+
+                            </Link>
+                                <button className='btn-logout hover' onClick={() => deletePost(post.$id, post.image)}>Delete</button>
+                                </div>
+                                <div className='date'>  {new Date(post.createdAt).toLocaleString()}</div>
+                                </div>
+
+                        </div>
+                    ) : (
+                        <>
+                    
                             <h1 className='margin'>{post.title}</h1>
+
                             <div className="m-20">
                                 {post.image && <img src={service.getfilePreview(post.image)} className='img-indi'/>
                                 }
@@ -67,6 +87,8 @@ function IndividualPost() {
 
                                 </div>
                             )}
+                                </>
+                                )}
                         </div>
 
                     </div>

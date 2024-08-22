@@ -21,7 +21,7 @@
     width: 630px;
   }
   .m-20{
-    margin: 15px 15px;
+    margin: 15px 7px;
   }
 
 .pb-pf{
@@ -61,6 +61,9 @@ font-size: 17px;
       
       margin: 0 20px;
   }
+  .date{
+    margin: 0 6px;
+  }
   .padding-indi {
     padding: 30px 89px;
 }
@@ -97,7 +100,6 @@ font-size: 17px;
    }
    .m-20{
     font-size: 14px;
-    margin: 15px 13px;
 
    }
    .nav li a{
@@ -176,7 +178,6 @@ font-size: 15px;
        }
        .m-20{
         font-size: 12px;
-        margin: 15px 13px;
        }
        .padding{
         padding: 5px 10px;
@@ -223,6 +224,10 @@ font-size: 15px;
         .error{
           font-size: 11px;
         }
+        .logo{
+          font-size: 13px;
+          width: 17px ;
+      }
  }
 @media only screen and (max-width: 500px) {
     /* welcome */
@@ -277,7 +282,7 @@ font-size: 15px;
      }
      .m-20{
       font-size: 9px;
-      margin: 15px 10;
+      margin: 15px 5px;
      }
  .m-10{
   font-size: 21px;
@@ -310,7 +315,6 @@ font-size: 15px;
      
     .date {
       font-size: 10px;
-      margin: 0 10px;
     }
 
 /* my blog  */
@@ -420,7 +424,7 @@ h4{
      }
      .date {
       font-size: 10px;
-      margin: 0 0px;
+      margin: 0 5px;
     }
 
     /* btn-logout */
@@ -503,5 +507,19 @@ padding: 35px 17px;
 }
 .no-post{
   font-size: 11px;
+}
+}
+
+@media screen and (max-width: 310px){
+  .img{
+    height: 65px;
+    width: 65px;
+  }
+  input[type="file"] {
+    
+    font-size: 5px;
+}
+.font-size-pf {
+  font-size: 10px;
 }
 }
