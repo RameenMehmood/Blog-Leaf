@@ -53,7 +53,6 @@ function IndividualPost() {
                                 {post.image && <img src={service.getfilePreview(post.image)} className='img-indi'/>
                                 }
                              <div className='margin font-indi'>  {post.content ? parse(post.content) : "No content available"}</div> 
-                             <div className='date-indi name'>  {new Date(post.createdAt).toLocaleString()}</div>
                                
                             </div>
                          
