@@ -78,6 +78,7 @@ export class Service {
                 conf.appwriteCollectionID,
                 [
                     Query.equal("status", "active"),
+                    Query.orderDesc("createdAt")
                     
                 ]
             )
